@@ -4,10 +4,16 @@ Leetcode solutions
 1. Enter the following commands in terminal:
 
 To pull leetcode-image from the repo indhujasiva
+
+```
 docker pull indhujasiva/leetcode-image
+```
 
 To build a container with the image; -p binds ports from your host machine(3000) to the container environment(given as EXPOSE 3000 in Dockerfile)
+
+```
 docker run -p 3000:3000 --name my-container indhujasiva/leetcode-image
+```
 
 2. Once my-container starts running, http://localhost:3000/ opens in default browser.
 
